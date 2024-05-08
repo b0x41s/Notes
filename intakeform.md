@@ -11,10 +11,10 @@
 
 - General security assessment
 - Specific system assessment (please specify):
-  - Web applications
-  - Network infrastructure
-  - Wireless networks
-  - Other (please specify):
+  - [ ] Web applications
+  - [ ] Network infrastructure
+  - [ ] Wireless networks
+  - [ ] Other (please specify):
 
 ## Desired Dates:
 
@@ -25,14 +25,14 @@
 
 - **IP addresses and domains to be tested:**
 - **Technologies and Systems in use:**
-  - Windows
-  - Linux/Unix
-  - MacOS
-  - Virtualization platform (please specify):
-  - Cloud services (please specify):
-  - Database management systems (please specify):
-  - Web applications (please specify):
-  - Other (please specify):
+  - [ ] Windows
+  - [ ] Linux/Unix
+  - [ ] MacOS
+  - [ ] Virtualization platform (please specify):
+  - [ ] Cloud services (please specify):
+  - [ ] Database management systems (please specify):
+  - [ ] Web applications (please specify):
+  - [ ] Other (please specify):
 
 ## Access Credentials:
 
